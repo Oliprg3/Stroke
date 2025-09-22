@@ -1,21 +1,10 @@
-Stroke is one of the leading causes of death and long-term disability. Early identification of stroke risk can save lives and improve recovery outcomes. This project uses PyTorch to train a deep learning model that predicts stroke likelihood based on health and lifestyle data such as age, blood pressure, and glucose levels.
+# Stroke-on-CT AI (Advanced)
 
-Features:
-Processes medical and lifestyle data to predict stroke risk
-Uses a neural network implemented in PyTorch
-Provides interpretable outputs to highlight the most important risk factors
-Can be extended into a web or mobile application for practical use in healthcare
+End-to-end system for intracranial hemorrhage (ICH) triage on non-contrast head CT:
+- DICOM ingest → anonymize → resample → multi-window channel stacks
+- 2.5D slice classifier + study-level attention aggregator
+- (Optional) weakly-supervised segmentation placeholder
+- FastAPI inference service + Streamlit triage UI
+- MLOps notes (MLflow), Dockerfile, configs
 
-Purpose:
-Many people do not have access to regular medical checkups. This project aims to assist healthcare professionals and individuals in identifying stroke risks early. It is designed to support decision-making and raise awareness of key health indicators.
-
-Technology:
-PyTorch for building and training the deep learning model
-Python libraries including pandas, numpy, matplotlib, and scikit-learn for data processing and analysis
-jupyter notebook for experimentation
-optional deployment with streamlit, flask, or fastapi
-
-Future work:
-incorporate additional datasets to improve accuracy
-add explainability tools to clarify model predictions
-deploy as a web or mobile application for real-world use
+> This is a **starter implementation** with production-minded structure You can extend each module.
