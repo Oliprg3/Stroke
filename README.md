@@ -1,10 +1,10 @@
-# Stroke-on-CT AI (Advanced)
+#CT scan based system
 
-End-to-end system for intracranial hemorrhage (ICH) triage on non-contrast head CT:
-- DICOM ingest → anonymize → resample → multi-window channel stacks
+End-to-end system for intracranial hemorrhage triage on non contrast head CT:
+- DICOM is ingest   and then anonymize after that resample multi-window channel stacks
 - 2.5D slice classifier + study-level attention aggregator
-- (Optional) weakly-supervised segmentation placeholder
+- weakly-supervised segmentation placeholder
 - FastAPI inference service + Streamlit triage UI
 - MLOps notes (MLflow), Dockerfile, configs
 
-> This is a **starter implementation** with production-minded structure You can extend each module.
+      - This is starter implementation you can extend by adding features. 
